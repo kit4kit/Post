@@ -5,12 +5,20 @@ public class Post {
     private int ownerId; // id владельца стены
     private int fromId; // id владельца поста
     private int date; // дата публикации
-    private int countViews; // колличесто просмотров
     private String text; // текст записи
+    private int createdBy; // идентификатор администратора
+    private int replyOwnerId; // идентификатор владельца записи, в ответ на которую была оставлена текущая
+    private int replyPostId; // идентификатор записи, в ответ на которую была оставлена текущая
+    private int  friendsOnly; // 1, если запись была создана с опцией «Только для друзей»
+    private String copyright; // источник материала.
+    private String postType;
+
 
     private CommentsInfo commentsInfo;
     private LikesInfo likesInfo;
     private Reposts reposts;
+    private Views views;
+    private Donut donut;
 
     public int getId() {
         return id;
@@ -42,14 +50,6 @@ public class Post {
 
     public void setDate(int date) {
         this.date = date;
-    }
-
-    public int getCountViews() {
-        return countViews;
-    }
-
-    public void setCountViews(int countViews) {
-        this.countViews = countViews;
     }
 
     public String getText() {

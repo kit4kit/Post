@@ -6,6 +6,22 @@ public class LikesInfo {
     private boolean userLike;
     private boolean canPublish;
 
+    public boolean isUserLike() {
+        return userLike;
+    }
+
+    public void setUserLike(boolean userLike) {
+        this.userLike = userLike;
+    }
+
+    public boolean isCanPublish() {
+        return canPublish;
+    }
+
+    public void setCanPublish(boolean canPublish) {
+        this.canPublish = canPublish;
+    }
+
     public int getCount() {
         return count;
     }

@@ -7,6 +7,29 @@ public class CommentsInfo {
     private boolean canClose; //может ли текущий пользователь закрыть комментарии к записи;
     private boolean canOpen; // может ли текущий пользователь открыть комментарии к записи.
 
+    public boolean isGroupsCanPost() {
+        return groupsCanPost;
+    }
+
+    public void setGroupsCanPost(boolean groupsCanPost) {
+        this.groupsCanPost = groupsCanPost;
+    }
+
+    public boolean isCanClose() {
+        return canClose;
+    }
+
+    public void setCanClose(boolean canClose) {
+        this.canClose = canClose;
+    }
+
+    public boolean isCanOpen() {
+        return canOpen;
+    }
+
+    public void setCanOpen(boolean canOpen) {
+        this.canOpen = canOpen;
+    }
 
     public int getCount() {
         return count;
